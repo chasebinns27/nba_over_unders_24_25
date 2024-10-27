@@ -8,6 +8,7 @@ library(do)
 library(XML)
 library(rvest)
 library(xml2)
+library(rsconnect)
 
 #normal picks
 Team <- c("ATL", "BOS", "BKN", "CHA", "CHI", "CLE", "DAL", "DN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MIA", "MIL", "MIN", "NYK", "OKC", "ORL", "PHI", "PHX", "POR", "SAC", "SAS", "TOR", "UTA", "WAS")
