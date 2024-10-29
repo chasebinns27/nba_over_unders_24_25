@@ -135,7 +135,7 @@ summary <- combined_data %>%
   ungroup() %>%
   left_join(wc_data, by = 'name') %>%
   dplyr::select(name, pred_wins, pred_losses, pred_pushes, wc_pred_wins, strength_of_record) %>%
-  arrange(desc(pred_wins), desc(wc_pred_wins), desc(strength_of_record)) %>%
+  arrange(desc(pred_wins), pred_losses, desc(wc_pred_wins), desc(strength_of_record)) %>%
   gt() %>%
   gt_theme_538() %>%
   gt_color_rows(strength_of_record,
